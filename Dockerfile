@@ -1,10 +1,8 @@
-FROM node:16.13.0
+FROM node:16.20.0-alpine
 
 WORKDIR /app
 
 COPY package.json .
-
-ENV NODE_ENV=production
 
 RUN npm install --production
 
